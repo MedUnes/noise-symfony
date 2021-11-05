@@ -58,7 +58,7 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.projectKey=MedUnes_noise-php
+            -Dsonar.projectKey=MedUnes_noise-symfony
             -Dsonar.organization=medunes
             -Dsonar.sources=src
             -Dsonar.tests=tests

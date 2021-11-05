@@ -1,6 +1,6 @@
 {
-  "name": "medunes/noise-php",
-  "description": "A quick skeleton project starter with frequently needed boiler-plate setups (ci, badges, etc.)",
+  "name": "medunes/noise-symfony",
+  "description": "A quick symfony skeleton project starter with frequently needed boiler-plate setups (ci, badges, etc.)",
   "keywords": [
     "skeleton",
     "starter",
@@ -18,7 +18,7 @@
     "github",
     "open-source"
   ],
-  "homepage": "http://github.com/medunes/noise-php",
+  "homepage": "http://github.com/medunes/noise-symfony",
   "authors": [
     {
       "name": "medunes",
@@ -71,8 +71,13 @@
     "twig/twig": "^2.12|^3.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "pdepend/pdepend": "^2.8",
+    "phpmd/phpmd": "^2.9",
+    "phpstan/phpstan": "^0.12.58",
     "phpunit/phpunit": "^9.5",
+    "roave/security-advisories": "dev-latest",
+    "squizlabs/php_codesniffer": "^3.5",
     "symfony/browser-kit": "5.3.*",
     "symfony/css-selector": "5.3.*",
     "symfony/debug-bundle": "5.3.*",
@@ -80,11 +85,6 @@
     "symfony/phpunit-bridge": "^5.3",
     "symfony/stopwatch": "5.3.*",
     "symfony/web-profiler-bundle": "5.3.*",
-    "friendsofphp/php-cs-fixer": "^2.16",
-    "pdepend/pdepend": "^2.8",
-    "phpmd/phpmd": "^2.9",
-    "phpstan/phpstan": "^0.12.58",
-    "squizlabs/php_codesniffer": "^3.5",
     "vimeo/psalm": "^4.2"
   },
   "config": {
@@ -123,11 +123,11 @@
     "setup:clean": "rm -f composer.lock && rm -rf vendor/ && composer update --no-interaction --prefer-dist --no-suggest --no-progress",
     "phpcs:scan": "php vendor/bin/phpcs --colors -ps --report=summary",
     "phpcs:fix": "php vendor/bin/phpcbf",
-    "build:phpunit": "php vendor/bin/phpunit -c phpunit.xml --coverage-clover coverage.xml",
+    "build:phpunit": "./vendor/bin/simple-phpunit -c phpunit.xml.dist --coverage-clover coverage.xml",
     "build:phpstan": [
       "phpstan analyze src --level=5 --configuration=phpstan.neon"
     ],
-    "build:psalm": "vendor/bin/psalm",
+    "build:psalm": "vendor/bin/psalm -c psalm.xml",
     "build": [
       "@build:phpunit",
       "@build:phpstan",

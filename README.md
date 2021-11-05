@@ -1,21 +1,21 @@
 <h1 align="center">
-PHP Noise
+Symfony Noise
     <br>
-    <img src="https://github.com/medunes/noise-php/blob/master/logo.png" width="200">
+    <img src="https://github.com/medunes/noise-symfony/blob/master/logo.png" width="200">
 </h1>
 
 <h5>A starter-kit for your PHP project. It includes frequently needed boilerplate setups (ci, badges, etc.)</h3>
 
-[![release](https://img.shields.io/packagist/v/medunes/noise-php?style=flat-square)](https://packagist.org/packages/medunes/noise-php)
-[![Build Status](https://github.com/medunes/noise-php/workflows/build/badge.svg?style=flat-square)](https://github.com/MedUnes/noise-php/actions?query=workflow%3A%22build%22)
+[![release](https://img.shields.io/packagist/v/medunes/noise-symfony?style=flat-square)](https://packagist.org/packages/medunes/noise-symfony)
+[![Build Status](https://github.com/medunes/noise-symfony/workflows/build/badge.svg?style=flat-square)](https://github.com/MedUnes/noise-symfony/actions?query=workflow%3A%22build%22)
 [![Author](https://img.shields.io/badge/author-@medunes-blue.svg?style=flat-square)](https://twitter.com/medunes2)
-[![codecov](https://codecov.io/gh/medunes/noise-php/branch/master/graph/badge.svg)](https://codecov.io/gh/medunes/noise-php/branch)
-[![SonarQube Quality](https://sonarcloud.io/api/project_badges/measure?project=MedUnes_noise-php&metric=alert_status)](https://sonarcloud.io/dashboard?id=MedUnes_noise-php)
+[![codecov](https://codecov.io/gh/medunes/noise-symfony/branch/master/graph/badge.svg)](https://codecov.io/gh/medunes/noise-symfony/branch)
+[![SonarQube Quality](https://sonarcloud.io/api/project_badges/measure?project=MedUnes_noise-symfony&metric=alert_status)](https://sonarcloud.io/dashboard?id=MedUnes_noise-symfony)
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%205-brightgreen.svg?style=flat&logo=php)](https://shields.io/#/)
 [![Psalm](https://img.shields.io/badge/Psalm-Level%205-brightgreen.svg?style=flat&logo=php)](https://shields.io/#/)
-[![Psalm Coverage](https://shepherd.dev/github/MedUnes/noise-php/coverage.svg)](https://shepherd.dev/github/MedUnes/noise-php/coverage.svg)
+[![Psalm Coverage](https://shepherd.dev/github/MedUnes/noise-symfony/coverage.svg)](https://shepherd.dev/github/MedUnes/noise-symfony/coverage.svg)
 
-[![Total Downloads](https://img.shields.io/packagist/dt/medunes/noise-php?style=flat-square)](https://packagist.org/packages/medunes/noise-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/medunes/noise-symfony?style=flat-square)](https://packagist.org/packages/medunes/noise-symfony)
 
 <br>
 
@@ -26,7 +26,7 @@ To install this application, first ensure you have [Composer](https://getcompose
 
 ```bash
 # Create your skeleton app (feel free to change the folder name instead of the demo one)
-$ composer create-project medunes/noise-php my-demo-project
+$ composer create-project medunes/noise-symfony my-demo-project
 
 # Enter your app folder
 $ cd my-demo-project
@@ -42,7 +42,7 @@ $ composer build
 ## ℹ️ FAQ
 
 #### So what is this?
-This is PHP Noise !
+This is Symfony Noise !
 
 An empty skeleton, a list of ready to customize setups.
 
@@ -72,11 +72,11 @@ Currently, we support the following noise, but feel free to increase the volume:
 * [SonarQube](https://docs.travis-ci.com/user/sonarcloud/)
 * [Github Actions](https://github.com/marketplace/actions/setup-php-action)
 * [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer#usage)
-* [README](https://github.com/medunes/noise-php/blob/master/README.md)
-* [CONTRIBUTING](https://github.com/medunes/noise-php/blob/master/CONTRIBUTING.md)
-* [LICENSE](https://github.com/medunes/noise-php/blob/master/LICENSE.md)
-* [LOGO](https://github.com/medunes/noise-php/blob/master/logo.png)
-* [CHANGELOG](https://github.com/medunes/noise-php/blob/master/CHANGELOG.md)
+* [README](https://github.com/medunes/noise-symfony/blob/master/README.md)
+* [CONTRIBUTING](https://github.com/medunes/noise-symfony/blob/master/CONTRIBUTING.md)
+* [LICENSE](https://github.com/medunes/noise-symfony/blob/master/LICENSE.md)
+* [LOGO](https://github.com/medunes/noise-symfony/blob/master/logo.png)
+* [CHANGELOG](https://github.com/medunes/noise-symfony/blob/master/CHANGELOG.md)
 
 #### Where to go next?
 
