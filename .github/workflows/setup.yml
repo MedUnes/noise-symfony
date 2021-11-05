@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-versions: [ '7.4, 8' ]
+        php-versions: [ '7.4', '8.0', '8.1','8.2' ]
     steps:
       # 1- Checkout
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         uses: mheap/phpunit-matcher-action@v1
       # 5- Run Unit Tests
       - name: Run Unit Tests
-        run: XDEBUG_MODE=coverage ./vendor/bin/phpunit --teamcity --coverage-clover ./coverage.xml -c phpunit.xml
+        run: XDEBUG_MODE=coverage ./vendor/bin/phpunit --teamcity --coverage-clover ./coverage.xml -c phpunit.xml.dist
       # 6- Upload coverage
       - uses: codecov/codecov-action@v1
         with:
@@ -50,7 +50,7 @@ jobs:
         run: phpstan analyze src --level=5 --error-format=checkstyle | cs2pr
       # 8- Run Psalm scan
       - name: Run Psalm scan
-        run: psalm --threads=8 --shepherd --stats --output-format=github
+        run: psalm --threads=8 --shepherd --stats --output-format=github -c psalm.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # 9- Run SonarCloud scan
