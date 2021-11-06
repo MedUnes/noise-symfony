@@ -4,7 +4,7 @@ Symfony Noise
     <img src="https://github.com/medunes/noise-symfony/blob/master/logo.png" width="200">
 </h1>
 
-<h5>A starter-kit for your Symfony PHP project. It includes frequently needed boilerplate setups (ci, badges, etc.)</h3>
+<h5>A starter-kit for your Symfony PHP projects. It includes frequently needed boilerplate setups (ci, badges, etc.)</h3>
 
 [![release](https://img.shields.io/packagist/v/medunes/noise-symfony?style=flat-square)](https://packagist.org/packages/medunes/noise-symfony)
 [![Build Status](https://github.com/medunes/noise-symfony/workflows/build/badge.svg?style=flat-square)](https://github.com/MedUnes/noise-symfony/actions?query=workflow%3A%22build%22)
