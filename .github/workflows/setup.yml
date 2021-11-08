@@ -53,9 +53,3 @@ jobs:
         run: psalm --threads=8 --shepherd --stats --output-format=github -c psalm.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # 9- Run SonarCloud scan
-      - name: Run SonarCloud scan
-        uses: sonarsource/sonarcloud-github-action@master
-        env:
-          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
