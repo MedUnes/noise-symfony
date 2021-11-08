@@ -120,7 +120,7 @@
     "post-update-cmd": [
       "@auto-scripts"
     ],
-    "setup:clean": "rm -rf vendor/ && composer install --no-interaction --prefer-dist --no-progress",
+    "setup:clean": "rm -rf vendor/ && composer update --no-interaction --prefer-dist --no-progress",
     "phpcs:scan": "php vendor/bin/phpcs --colors -ps --report=summary",
     "phpcs:fix": "php vendor/bin/phpcbf",
     "build:phpunit": "./vendor/bin/simple-phpunit -c phpunit.xml.dist --coverage-clover coverage.xml",
